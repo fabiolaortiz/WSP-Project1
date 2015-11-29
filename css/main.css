@@ -5,17 +5,30 @@
 body {
     background: #8c8c8c;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 90%;
-    margin: 0 50px 0 50px;
     font-size: .90em;
-    position: absolute;
+}
+
+#content {
+    width: 90%;
+    margin: 0 auto;
 }
 /* HEADER ============================== */
 
 header img {
-    max-width: 45%;
+    max-width: 100%;
+    margin-bottom: 10px;
 }
 
 /* ABOUT ============================== */
 
+section#about img {
+    width: 100%;
+}
+
+#about{
+    padding: 0;
+    background: url(images/fabiola-1.jpg) no-repeat center;
+    background-size: cover;
+    border: solid 2em #303030;
+}
 /* COMPONENTS ============================== */
