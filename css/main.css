@@ -2,8 +2,19 @@
 ============================================================
 ============================================================*/
 
-
+body {
+    background: #8c8c8c;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 90%;
+    margin: 0 50px 0 50px;
+    font-size: .90em;
+    position: absolute;
+}
 /* HEADER ============================== */
+
+header img {
+    max-width: 100%;
+}
 
 /* ABOUT ============================== */
 
