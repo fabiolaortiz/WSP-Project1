@@ -21,14 +21,71 @@ header img {
 
 /* ABOUT ============================== */
 
-section#about img {
-    width: 100%;
-}
-
-#about{
-    padding: 0;
-    background: url(images/fabiola-1.jpg) no-repeat center;
-    background-size: cover;
+.about{
     border: solid 2em #303030;
 }
+
+.about img {
+    max-width: 100%;
+    margin-bottom: -3px;
+}
+
+#btn {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 55%;
+}
+
+a[href*=WSP-Project1] {
+    padding: 1em 2em 1em 4em;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: red;
+}
+
+a[href*=WSP-Project1]:hover {
+    color: white;
+    background: #11E7FF;
+}
+
+a[href*=WSP-Project1]::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-left: 8%;
+    width: 1.5em;
+    height: 1.5em;
+    background: url('../images/save-file.png') no-repeat right top;
+    background-size: 100%;
+}
+
 /* COMPONENTS ============================== */
+#title {
+    background-color: #FD63FF;
+    padding: 1em;
+    margin-bottom: 0;
+    font-size: 2em;
+    border: solid 1em #303030;
+    text-transform: uppercase;
+}
+article {
+    border: solid 2em #303030;
+    background-color: #5cb85c;
+}
+article img {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 2em;
+}
+
+ol {
+    margin-bottom: 3em;
+    list-style: decimal;
+}
+
+#margin {
+    margin: 0 2em 0 2em;
+}
+
