@@ -2,3 +2,70 @@
 ============================================================
 ============================================================*/
 
+body {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.063em;
+    width: 970px;
+    margin: 0 auto;
+}
+
+section {
+    background: #f1f1f1;
+    display: block;
+    margin: 0 auto;
+}
+
+section:before, section:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+h3:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+section:after {
+    clear: both;
+}
+
+h3 {
+    padding-top: 82px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 37px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 300px;
+    text-align: center;
+    line-height: 1.81818;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #131313;
+}
+
+article {
+    float: left;
+}
+
+img {
+    max-width: 100%;
+    width: 242px;
+    height: auto;
+    position: relative;
+}
+
+img:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -moz-transition: 0.4s all ease;
+    -o-transition: 0.4s all ease;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+}
