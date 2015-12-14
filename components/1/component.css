@@ -26,16 +26,15 @@ nav {
     display: block;
     margin-right: -13px;
     margin-top: 14px;
-
 }
 
 nav ul {
     list-style: none;
     position: relative;
-    display: inline-block;
 }
 
 nav ul > li + ul  > a, ul > li > a:hover, ul > li.active > a {
+    position: relative;
     border-bottom: 3px solid #f3b553;
     -moz-transition: 0.2s all ease;
     -o-transition: 0.2s all ease;
@@ -61,13 +60,24 @@ nav li a {
 
 nav li ul {
     display: none;
+    position: relative;
+    left: 17%;
 }
 
-.sf-menu > li + li {
+nav li ul li ul {
+    position: relative;
+    right: 25%;
+}
+
+nav ul > li {
     margin-left: 21px;
 }
 
-.sf-menu ul a {
+nav ul > li li, nav ul > li li li {
+    margin-left: 0;
+}
+
+nav ul ul a {
     display: block;
     padding: 4px 5px 5px;
     text-transform: none;
@@ -75,12 +85,12 @@ nav li ul {
     min-width: 130px;
 }
 
-.sf-menu a {
+nav ul a {
     display: block;
     text-align: center;
 }
 
-.sf-menu ul {
+nav ul ul{
     display: none;
     position: absolute;
     text-align: center;
@@ -90,10 +100,9 @@ nav li ul {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
-.sf-menu > li > ul:before {
+nav ul > li > ul:before {
     content: '';
     position: absolute;
     bottom: 100%;

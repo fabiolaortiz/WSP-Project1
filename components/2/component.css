@@ -25,7 +25,7 @@ h3 {
     margin: 0 0 20px 0;
 }
 
-.sidepanel {
+section {
     width: 200px;
     display: inline-block;
     float: left;
@@ -37,17 +37,17 @@ h3 {
     text-shadow: #000 0 -1px 0;
 }
 
-.sidepanel a {
+section a {
     color: #bbb;
 }
 
-.sidepanel section a {
+section article a {
     margin: 1px 0 10px 15px;
     display: inline-block;
     float: left;
 }
 
-.sidepanel section a:first-child {
+section article a:first-child {
     margin-left: 0;
 }
 
